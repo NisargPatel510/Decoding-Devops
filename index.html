@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Decoding DevOps — an interactive learning hub for Git, GitHub, Docker, Kubernetes and Jenkins.">
+  <meta name="description" content="Decoding DevOps - interactive learning hub for Git, GitHub, Docker, Kubernetes and Jenkins.">
   <title>Decoding DevOps | Learn. Build. Automate.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,211 +11,208 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="progress-bar" id="progressBar"></div>
+<div class="progress-bar" id="progressBar"></div>
 
-  <header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Decoding DevOps home">
-        <span class="brand-mark">&lt;/&gt;</span>
-        <span>Decoding <b>DevOps</b></span>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#devops">DevOps</a>
-        <a href="#tools">Tools</a>
-        <a href="#pipeline">Pipeline</a>
-        <a href="#start">Start Learning</a>
-      </div>
-
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero section">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">DEVOPS LEARNING HUB</span>
-          <h1>Decode the tools.<br><span>Understand the flow.</span></h1>
-          <p class="hero-text">
-            A practical learning space for 3rd-year B.Tech students to understand
-            how Git, GitHub, Docker, Kubernetes and Jenkins work together.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#tools">Explore Tools <span>→</span></a>
-            <a class="btn btn-secondary" href="#pipeline">See the Pipeline</a>
-          </div>
-
-          <div class="hero-stats">
-            <div><strong>04</strong><span>Core Tools</span></div>
-            <div><strong>01</strong><span>Unified Workflow</span></div>
-            <div><strong>∞</strong><span>Ways to Learn</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="DevOps workflow illustration">
-          <div class="terminal-card">
-            <div class="terminal-top">
-              <span class="terminal-dots"><i></i><i></i><i></i></span>
-              <span>devops.sh</span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="prompt">$</span> git push origin main</p>
-              <p class="muted">→ triggering CI pipeline...</p>
-              <p><span class="prompt">$</span> docker build -t app .</p>
-              <p class="muted">→ image created ✓</p>
-              <p><span class="prompt">$</span> kubectl apply -f deployment.yml</p>
-              <p class="success">→ deployment successful ✓</p>
-            </div>
-          </div>
-
-          <div class="floating-card card-git"><span>●</span> Git + GitHub</div>
-          <div class="floating-card card-docker"><span>●</span> Docker</div>
-          <div class="floating-card card-k8s"><span>●</span> Kubernetes</div>
-          <div class="floating-card card-jenkins"><span>●</span> Jenkins</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section intro-section" id="devops">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">01 / THE BIG PICTURE</span>
-          <h2>DevOps in <span>60 seconds.</span></h2>
-          <p>DevOps connects development and operations through collaboration, automation and repeatable delivery.</p>
-        </div>
-
-        <div class="devops-loop">
-          <div class="loop-center">
-            <span>DEV</span>
-            <strong>+</strong>
-            <span>OPS</span>
-          </div>
-          <div class="loop-node node-plan"><b>01</b><span>Plan</span></div>
-          <div class="loop-node node-code"><b>02</b><span>Code</span></div>
-          <div class="loop-node node-build"><b>03</b><span>Build</span></div>
-          <div class="loop-node node-test"><b>04</b><span>Test</span></div>
-          <div class="loop-node node-release"><b>05</b><span>Release</span></div>
-          <div class="loop-node node-deploy"><b>06</b><span>Deploy</span></div>
-          <div class="loop-node node-monitor"><b>07</b><span>Monitor</span></div>
-        </div>
-
-        <div class="why-grid">
-          <article class="info-card">
-            <span class="card-icon">⚡</span>
-            <h3>Faster delivery</h3>
-            <p>Automation reduces repetitive manual work and makes software delivery more consistent.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-icon">🤝</span>
-            <h3>Better collaboration</h3>
-            <p>Development and operations share workflows, feedback and responsibility.</p>
-          </article>
-          <article class="info-card">
-            <span class="card-icon">🔁</span>
-            <h3>Repeatable processes</h3>
-            <p>Version control, containers and pipelines help teams reproduce the same process reliably.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tools-section" id="tools">
-      <div class="container">
-        <div class="section-heading centered">
-          <span class="eyebrow">02 / THE TOOLKIT</span>
-          <h2>Meet your <span>DevOps toolkit.</span></h2>
-          <p>Four tools, four jobs — one connected workflow.</p>
-        </div>
-
-        <div class="tool-grid">
-          <article class="tool-card github">
-            <div class="tool-top"><span class="tool-number">01</span><span class="tool-symbol">GH</span></div>
-            <div class="tool-icon">◉</div>
-            <h3>Git + GitHub</h3>
-            <p>Track code changes, collaborate with a team and manage the source code that drives your project.</p>
-            <div class="tool-tags"><span>Version Control</span><span>Collaboration</span></div>
-            <a href="#start" class="tool-link">Learn the workflow →</a>
-          </article>
-
-          <article class="tool-card docker">
-            <div class="tool-top"><span class="tool-number">02</span><span class="tool-symbol">🐳</span></div>
-            <div class="tool-icon">◇</div>
-            <h3>Docker</h3>
-            <p>Package an application and its dependencies into portable containers that run consistently.</p>
-            <div class="tool-tags"><span>Containers</span><span>Images</span></div>
-            <a href="#start" class="tool-link">Understand containers →</a>
-          </article>
-
-          <article class="tool-card kubernetes">
-            <div class="tool-top"><span class="tool-number">03</span><span class="tool-symbol">☸</span></div>
-            <div class="tool-icon">✦</div>
-            <h3>Kubernetes</h3>
-            <p>Deploy, scale and manage containerized applications across a cluster.</p>
-            <div class="tool-tags"><span>Orchestration</span><span>Deployment</span></div>
-            <a href="#start" class="tool-link">Explore orchestration →</a>
-          </article>
-
-          <article class="tool-card jenkins">
-            <div class="tool-top"><span class="tool-number">04</span><span class="tool-symbol">J</span></div>
-            <div class="tool-icon">⚙</div>
-            <h3>Jenkins</h3>
-            <p>Automate build, test and delivery workflows through configurable CI/CD pipelines.</p>
-            <div class="tool-tags"><span>CI/CD</span><span>Automation</span></div>
-            <a href="#start" class="tool-link">Build a pipeline →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section connection-section" id="pipeline">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">03 / CONNECT THE DOTS</span>
-          <h2>From <span>git push</span> to deployment.</h2>
-          <p>The goal is not to memorize isolated commands. Understand how each tool contributes to the same delivery flow.</p>
-        </div>
-
-        <div class="pipeline">
-          <div class="pipeline-line"></div>
-          <div class="pipeline-step active"><div class="pipeline-icon">GH</div><b>GitHub</b><small>Source code</small></div>
-          <div class="pipeline-step"><div class="pipeline-icon">J</div><b>Jenkins</b><small>Automate</small></div>
-          <div class="pipeline-step"><div class="pipeline-icon">🐳</div><b>Docker</b><small>Package</small></div>
-          <div class="pipeline-step"><div class="pipeline-icon">☸</div><b>Kubernetes</b><small>Deploy</small></div>
-        </div>
-
-        <div class="pipeline-note">
-          <span>💡</span>
-          <p><strong>Think of it as a relay race:</strong> GitHub holds the source, Jenkins coordinates the process, Docker packages the application, and Kubernetes runs and manages it.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section start-section" id="start">
-      <div class="container start-card">
-        <div>
-          <span class="eyebrow">04 / YOUR JOURNEY</span>
-          <h2>Learn the tool. <span>Then use it.</span></h2>
-          <p>Phase 1 establishes the learning hub. Later phases will turn this exact website into our Docker, Kubernetes and Jenkins demonstration application.</p>
-        </div>
-        <a class="btn btn-primary" href="#home">Back to top ↑</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2026 Decoding DevOps</span>
-      <span>Learn • Build • Automate</span>
+<header class="site-header">
+  <nav class="navbar container">
+    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>Decoding <b>DevOps</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#devops">DevOps</a><a href="#tools">Tools</a>
+      <a href="#pipeline">Pipeline</a><a href="#quiz">Quiz</a><a href="#resources">Resources</a>
     </div>
-  </footer>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+  </nav>
+</header>
 
-  <script src="js/main.js"></script>
+<main id="home">
+<section class="hero section">
+  <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">DEVOPS LEARNING HUB</span>
+      <h1>Decode the tools.<br><span>Understand the flow.</span></h1>
+      <p class="hero-text">A practical learning hub for 3rd-year B.Tech students to understand Git, GitHub, Docker, Kubernetes and Jenkins — and how they work together.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#tools">Explore Tools →</a><a class="btn btn-secondary" href="#pipeline">See Pipeline</a></div>
+      <div class="hero-stats"><div><strong>04</strong><span>Core Tools</span></div><div><strong>01</strong><span>Connected Workflow</span></div><div><strong>10</strong><span>Quiz Questions</span></div></div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal-card">
+        <div class="terminal-top"><span class="terminal-dots"><i></i><i></i><i></i></span><span>devops.sh</span></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> git push origin main</p><p class="muted">→ triggering CI pipeline...</p>
+          <p><span class="prompt">$</span> docker build -t app .</p><p class="muted">→ image created ✓</p>
+          <p><span class="prompt">$</span> kubectl apply -f deployment.yml</p><p class="success">→ deployment successful ✓</p>
+        </div>
+      </div>
+      <div class="floating-card card-git">● Git + GitHub</div><div class="floating-card card-docker">● Docker</div>
+      <div class="floating-card card-k8s">● Kubernetes</div><div class="floating-card card-jenkins">● Jenkins</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="devops">
+<div class="container">
+  <div class="section-heading"><span class="eyebrow">01 / THE BIG PICTURE</span><h2>DevOps in <span>60 seconds.</span></h2><p>DevOps connects development and operations through collaboration, automation and repeatable software delivery.</p></div>
+  <div class="devops-loop">
+    <div class="loop-center"><span>DEV</span><strong>+</strong><span>OPS</span></div>
+    <div class="loop-node n1">01<br><b>Plan</b></div><div class="loop-node n2">02<br><b>Code</b></div>
+    <div class="loop-node n3">03<br><b>Build</b></div><div class="loop-node n4">04<br><b>Test</b></div>
+    <div class="loop-node n5">05<br><b>Release</b></div><div class="loop-node n6">06<br><b>Deploy</b></div><div class="loop-node n7">07<br><b>Monitor</b></div>
+  </div>
+  <div class="why-grid">
+    <article class="info-card"><span>⚡</span><h3>Faster delivery</h3><p>Automation reduces repetitive work and makes delivery more consistent.</p></article>
+    <article class="info-card"><span>🤝</span><h3>Better collaboration</h3><p>Development and operations share workflows, feedback and responsibility.</p></article>
+    <article class="info-card"><span>🔁</span><h3>Repeatable processes</h3><p>Version control, containers and pipelines make processes reproducible.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="section tools-section" id="tools">
+<div class="container">
+  <div class="section-heading centered"><span class="eyebrow">02 / THE TOOLKIT</span><h2>Learn the <span>four building blocks.</span></h2><p>Choose a tool, then explore concepts, use cases, commands and a mini lab.</p></div>
+
+  <div class="tool-tabs" role="tablist">
+    <button class="tool-tab active github" data-tool="github">◉ Git + GitHub</button>
+    <button class="tool-tab docker" data-tool="docker">🐳 Docker</button>
+    <button class="tool-tab kubernetes" data-tool="kubernetes">☸ Kubernetes</button>
+    <button class="tool-tab jenkins" data-tool="jenkins">🔴 Jenkins</button>
+  </div>
+
+  <div class="tool-panel active" id="github">
+    <div class="tool-intro"><div class="big-icon github-icon">GH</div><div><span class="eyebrow">VERSION CONTROL + COLLABORATION</span><h3>Git + GitHub</h3><p>Git records source-code changes. GitHub hosts Git repositories and adds collaboration features such as pull requests and code review.</p></div></div>
+    <div class="subtabs"><button class="subtab active" data-panel="github-concepts">Concepts</button><button class="subtab" data-panel="github-use">Use Cases</button><button class="subtab" data-panel="github-commands">Commands</button><button class="subtab" data-panel="github-lab">Mini Lab</button></div>
+    <div class="subpanel active" id="github-concepts"><div class="concept-grid searchable">
+      <article class="concept"><small>01</small><h4>Repository</h4><p>A project workspace containing files, history and Git metadata.</p></article>
+      <article class="concept"><small>02</small><h4>Commit</h4><p>A recorded snapshot of staged changes with a message.</p></article>
+      <article class="concept"><small>03</small><h4>Branch</h4><p>An independent line of development used for features or fixes.</p></article>
+      <article class="concept"><small>04</small><h4>Pull Request</h4><p>A GitHub mechanism for proposing and reviewing changes before merging.</p></article>
+      <article class="concept"><small>05</small><h4>Clone</h4><p>Creates a local copy of a remote repository, including its history.</p></article>
+      <article class="concept"><small>06</small><h4>Merge</h4><p>Combines changes from one branch into another.</p></article>
+    </div></div>
+    <div class="subpanel" id="github-use"><div class="use-grid">
+      <article><b>👥 Team projects</b><p>Developers work on branches and integrate changes through pull requests.</p></article>
+      <article><b>🔎 Code review</b><p>Teammates discuss and review changes before they reach the main branch.</p></article>
+      <article><b>🕘 History</b><p>Commits provide a traceable record of what changed and when.</p></article>
+      <article><b>🌍 Collaboration</b><p>A remote repository allows contributors to work from different machines.</p></article>
+    </div></div>
+    <div class="subpanel" id="github-commands"><div class="command-grid">
+      <div class="command"><div><b>Initialize</b><p>Start Git tracking.</p></div><button class="copy" data-copy="git init">Copy</button><code>git init</code></div>
+      <div class="command"><div><b>Stage</b><p>Stage all current changes.</p></div><button class="copy" data-copy="git add .">Copy</button><code>git add .</code></div>
+      <div class="command"><div><b>Commit</b><p>Save a snapshot.</p></div><button class="copy" data-copy='git commit -m "message"'>Copy</button><code>git commit -m "message"</code></div>
+      <div class="command"><div><b>Push</b><p>Upload commits to GitHub.</p></div><button class="copy" data-copy="git push origin main">Copy</button><code>git push origin main</code></div>
+      <div class="command"><div><b>Branch</b><p>Create and switch branches.</p></div><button class="copy" data-copy="git switch -c feature-name">Copy</button><code>git switch -c feature-name</code></div>
+      <div class="command"><div><b>Pull</b><p>Get remote changes.</p></div><button class="copy" data-copy="git pull origin main">Copy</button><code>git pull origin main</code></div>
+    </div></div>
+    <div class="subpanel" id="github-lab"><div class="lab"><span>MINI LAB</span><h4>Publish a local project</h4><ol><li>Create a small project and run <code>git init</code>.</li><li>Use <code>git status</code> to inspect changes.</li><li>Stage and commit the files.</li><li>Create a GitHub repository and add it as a remote.</li><li>Push the <code>main</code> branch.</li></ol><aside>💡 Never commit passwords, API keys or other secrets.</aside></div></div>
+  </div>
+
+  <div class="tool-panel" id="docker">
+    <div class="tool-intro"><div class="big-icon docker-icon">🐳</div><div><span class="eyebrow">CONTAINERIZATION</span><h3>Docker</h3><p>Docker packages an application and its dependencies into a container image so it can run consistently across environments.</p></div></div>
+    <div class="subtabs"><button class="subtab active" data-panel="docker-concepts">Concepts</button><button class="subtab" data-panel="docker-use">Use Cases</button><button class="subtab" data-panel="docker-commands">Commands</button><button class="subtab" data-panel="docker-lab">Mini Lab</button></div>
+    <div class="subpanel active" id="docker-concepts"><div class="concept-grid">
+      <article class="concept"><small>01</small><h4>Image</h4><p>A read-only template used to create containers.</p></article><article class="concept"><small>02</small><h4>Container</h4><p>A running, isolated instance created from an image.</p></article><article class="concept"><small>03</small><h4>Dockerfile</h4><p>A text file containing instructions for building an image.</p></article><article class="concept"><small>04</small><h4>Registry</h4><p>A service that stores and distributes container images.</p></article><article class="concept"><small>05</small><h4>Volume</h4><p>Persistent storage managed separately from a container.</p></article><article class="concept"><small>06</small><h4>Port mapping</h4><p>Connects a host port to an application port inside a container.</p></article>
+    </div></div>
+    <div class="subpanel" id="docker-use"><div class="use-grid"><article><b>📦 Consistency</b><p>Package dependencies with the application.</p></article><article><b>🚀 Deployment</b><p>Start applications from known images quickly.</p></article><article><b>🧪 Testing</b><p>Run isolated and repeatable environments.</p></article><article><b>☁️ Cloud workloads</b><p>Use the same container artifact across platforms.</p></article></div></div>
+    <div class="subpanel" id="docker-commands"><div class="command-grid">
+      <div class="command"><div><b>Build image</b><p>Build from Dockerfile.</p></div><button class="copy" data-copy="docker build -t myapp .">Copy</button><code>docker build -t myapp .</code></div>
+      <div class="command"><div><b>Run container</b><p>Run and publish port 8080.</p></div><button class="copy" data-copy="docker run -d -p 8080:80 myapp">Copy</button><code>docker run -d -p 8080:80 myapp</code></div>
+      <div class="command"><div><b>List containers</b><p>Show running containers.</p></div><button class="copy" data-copy="docker ps">Copy</button><code>docker ps</code></div>
+      <div class="command"><div><b>List images</b><p>Show local images.</p></div><button class="copy" data-copy="docker images">Copy</button><code>docker images</code></div>
+      <div class="command"><div><b>Stop</b><p>Stop a running container.</p></div><button class="copy" data-copy="docker stop CONTAINER_ID">Copy</button><code>docker stop CONTAINER_ID</code></div>
+      <div class="command"><div><b>Logs</b><p>Inspect container output.</p></div><button class="copy" data-copy="docker logs CONTAINER_ID">Copy</button><code>docker logs CONTAINER_ID</code></div>
+    </div></div>
+    <div class="subpanel" id="docker-lab"><div class="lab"><span>MINI LAB</span><h4>Containerize a static website</h4><ol><li>Create <code>index.html</code>.</li><li>Write a Dockerfile using a web-server image.</li><li>Build the image.</li><li>Run it with a host-to-container port mapping.</li><li>Open the mapped port in a browser.</li></ol><aside>💡 Image = packaged blueprint. Container = running instance.</aside></div></div>
+  </div>
+
+  <div class="tool-panel" id="kubernetes">
+    <div class="tool-intro"><div class="big-icon k8s-icon">☸</div><div><span class="eyebrow">CONTAINER ORCHESTRATION</span><h3>Kubernetes</h3><p>Kubernetes automates deployment, scaling and management of containerized workloads across a cluster.</p></div></div>
+    <div class="subtabs"><button class="subtab active" data-panel="k8s-concepts">Concepts</button><button class="subtab" data-panel="k8s-use">Use Cases</button><button class="subtab" data-panel="k8s-commands">Commands</button><button class="subtab" data-panel="k8s-lab">Mini Lab</button></div>
+    <div class="subpanel active" id="k8s-concepts"><div class="concept-grid">
+      <article class="concept"><small>01</small><h4>Cluster</h4><p>A set of machines managed together by Kubernetes.</p></article><article class="concept"><small>02</small><h4>Node</h4><p>A worker machine where Pods run.</p></article><article class="concept"><small>03</small><h4>Pod</h4><p>The smallest deployable Kubernetes unit containing one or more containers.</p></article><article class="concept"><small>04</small><h4>Deployment</h4><p>Describes desired application state and manages replicated Pods.</p></article><article class="concept"><small>05</small><h4>Service</h4><p>Provides a stable network endpoint for a set of Pods.</p></article><article class="concept"><small>06</small><h4>Namespace</h4><p>A logical boundary for grouping Kubernetes resources.</p></article>
+    </div></div>
+    <div class="subpanel" id="k8s-use"><div class="use-grid"><article><b>📈 Scaling</b><p>Increase or decrease application replicas.</p></article><article><b>🩹 Self-healing</b><p>Replace failed Pods to approach the desired state.</p></article><article><b>🔄 Rolling updates</b><p>Progressively release new application versions.</p></article><article><b>🌐 Service discovery</b><p>Provide stable communication endpoints for workloads.</p></article></div></div>
+    <div class="subpanel" id="k8s-commands"><div class="command-grid">
+      <div class="command"><div><b>Cluster info</b><p>Show cluster information.</p></div><button class="copy" data-copy="kubectl cluster-info">Copy</button><code>kubectl cluster-info</code></div>
+      <div class="command"><div><b>List Pods</b><p>Show Pods in the current namespace.</p></div><button class="copy" data-copy="kubectl get pods">Copy</button><code>kubectl get pods</code></div>
+      <div class="command"><div><b>Apply YAML</b><p>Create or update resources.</p></div><button class="copy" data-copy="kubectl apply -f deployment.yaml">Copy</button><code>kubectl apply -f deployment.yaml</code></div>
+      <div class="command"><div><b>Deployments</b><p>Inspect Deployments.</p></div><button class="copy" data-copy="kubectl get deployments">Copy</button><code>kubectl get deployments</code></div>
+      <div class="command"><div><b>Services</b><p>Inspect Services.</p></div><button class="copy" data-copy="kubectl get services">Copy</button><code>kubectl get services</code></div>
+      <div class="command"><div><b>Describe</b><p>View resource details and events.</p></div><button class="copy" data-copy="kubectl describe pod POD_NAME">Copy</button><code>kubectl describe pod POD_NAME</code></div>
+    </div></div>
+    <div class="subpanel" id="k8s-lab"><div class="lab"><span>MINI LAB</span><h4>Deploy a containerized website</h4><ol><li>Make the Docker image available to Kubernetes.</li><li>Create a Deployment YAML.</li><li>Create a Service YAML.</li><li>Apply the manifests with <code>kubectl apply -f</code>.</li><li>Inspect Pods, Deployment and Service status.</li></ol><aside>💡 You declare the desired state; Kubernetes works toward it.</aside></div></div>
+  </div>
+
+  <div class="tool-panel" id="jenkins">
+    <div class="tool-intro"><div class="big-icon jenkins-icon">J</div><div><span class="eyebrow">CI/CD AUTOMATION</span><h3>Jenkins</h3><p>Jenkins is an automation server used to create pipelines that build, test and deliver software.</p></div></div>
+    <div class="subtabs"><button class="subtab active" data-panel="jenkins-concepts">Concepts</button><button class="subtab" data-panel="jenkins-use">Use Cases</button><button class="subtab" data-panel="jenkins-pipeline">Pipeline</button><button class="subtab" data-panel="jenkins-lab">Mini Lab</button></div>
+    <div class="subpanel active" id="jenkins-concepts"><div class="concept-grid">
+      <article class="concept"><small>01</small><h4>Job</h4><p>A configured Jenkins task that performs an automation process.</p></article><article class="concept"><small>02</small><h4>Pipeline</h4><p>A sequence of automated stages representing software delivery.</p></article><article class="concept"><small>03</small><h4>Jenkinsfile</h4><p>A versioned file defining a Jenkins Pipeline as code.</p></article><article class="concept"><small>04</small><h4>Stage</h4><p>A logical phase such as Build, Test, Package or Deploy.</p></article><article class="concept"><small>05</small><h4>Agent</h4><p>An execution environment where Jenkins runs pipeline work.</p></article><article class="concept"><small>06</small><h4>Plugin</h4><p>An extension that adds integrations or capabilities to Jenkins.</p></article>
+    </div></div>
+    <div class="subpanel" id="jenkins-use"><div class="use-grid"><article><b>🔨 Continuous Integration</b><p>Build and test changes automatically after source updates.</p></article><article><b>🚢 Continuous Delivery</b><p>Automate packaging and delivery after validation.</p></article><article><b>🧪 Automated testing</b><p>Run repeatable tests as part of the pipeline.</p></article><article><b>🔗 Tool integration</b><p>Connect source control, Docker and deployment systems.</p></article></div></div>
+    <div class="subpanel" id="jenkins-pipeline"><div class="pipeline-code"><div><span>JENKINSFILE CONCEPT</span><h4>Pipeline as code</h4><pre><code>pipeline {
+  agent any
+
+  stages {
+    stage('Build') {
+      steps { echo 'Building...' }
+    }
+
+    stage('Test') {
+      steps { echo 'Testing...' }
+    }
+
+    stage('Docker') {
+      steps { echo 'Building image...' }
+    }
+
+    stage('Deploy') {
+      steps { echo 'Deploying...' }
+    }
+  }
+}</code></pre><button class="copy large" data-copy="pipeline { agent any; stages { stage('Build') { steps { echo 'Building...' } } stage('Test') { steps { echo 'Testing...' } } stage('Docker') { steps { echo 'Building image...' } } stage('Deploy') { steps { echo 'Deploying...' } } } }">Copy Jenkinsfile</button></div><div class="stage-list"><b>01 · Build</b><b>02 · Test</b><b>03 · Package</b><b>04 · Deploy</b></div></div></div>
+    <div class="subpanel" id="jenkins-lab"><div class="lab"><span>MINI LAB</span><h4>Create a simple CI pipeline</h4><ol><li>Create a Jenkins Pipeline job.</li><li>Connect it to the GitHub repository.</li><li>Define Build and Test stages in a Jenkinsfile.</li><li>Run the pipeline and inspect console output.</li><li>Later add Docker build and Kubernetes deployment stages.</li></ol><aside>💡 Pipeline as code makes the delivery process versionable.</aside></div></div>
+  </div>
+
+  <div class="search-box"><label for="searchInput">🔎 Search concepts</label><input id="searchInput" type="search" placeholder="Search the active tool: pod, branch, image, pipeline..." autocomplete="off"><span id="searchResult"></span></div>
+</div>
+</section>
+
+<section class="section" id="pipeline">
+<div class="container">
+  <div class="section-heading"><span class="eyebrow">03 / CONNECT THE DOTS</span><h2>From <span>git push</span> to deployment.</h2><p>Click a stage to understand its role in the delivery chain.</p></div>
+  <div class="pipeline-flow">
+    <button class="pipe active" data-stage="github"><span>GH</span><b>GitHub</b><small>Source</small></button><i>→</i>
+    <button class="pipe" data-stage="jenkins"><span>J</span><b>Jenkins</b><small>Automate</small></button><i>→</i>
+    <button class="pipe" data-stage="docker"><span>🐳</span><b>Docker</b><small>Package</small></button><i>→</i>
+    <button class="pipe" data-stage="kubernetes"><span>☸</span><b>Kubernetes</b><small>Deploy</small></button>
+  </div>
+  <div class="pipeline-detail" id="pipelineDetail"><strong>GH</strong><div><b>GitHub — Source</b><p>Source code is committed and pushed to the remote repository, creating the input for the automated delivery process.</p></div></div>
+</div>
+</section>
+
+<section class="section quiz-section" id="quiz">
+<div class="container">
+  <div class="section-heading centered"><span class="eyebrow">04 / CHECK YOURSELF</span><h2>Quick <span>DevOps quiz.</span></h2><p>Test your understanding of the workflow.</p></div>
+  <div class="quiz-card">
+    <div class="quiz-meta"><span id="quizProgress">Question 1 of 10</span><span id="quizScore">Score: 0</span></div>
+    <h3 id="quizQuestion"></h3><div id="quizOptions" class="quiz-options"></div><div id="quizFeedback" class="quiz-feedback"></div>
+    <button class="btn btn-primary" id="quizNext" disabled>Next Question →</button>
+  </div>
+</div>
+</section>
+
+<section class="section" id="resources">
+<div class="container resource-card">
+  <div><span class="eyebrow">05 / COMMANDS</span><h2>Keep the <span>commands close.</span></h2><p>The downloadable command cheat sheet will be added in the next phase. It will contain the most useful Git, Docker, Kubernetes and Jenkins references for this project.</p></div>
+  <button class="btn btn-primary" id="commandsButton">Get Commands →</button>
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-inner"><span>© 2026 Decoding DevOps</span><span>Learn • Build • Automate</span></div></footer>
+<div class="toast" id="toast">Copied!</div>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
 </body>
 </html>

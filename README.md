@@ -1,24 +1,26 @@
-# Decoding DevOps
+# Decoding DevOps — Phase 2
 
-Phase 1 foundation for the Decoding DevOps learning hub.
+Interactive learning hub for Git + GitHub, Docker, Kubernetes and Jenkins.
 
 ## Run locally
 
-No build tool is required.
+Open `index.html` in a browser or use VS Code Live Server.
 
-1. Open `index.html` in a browser.
-2. For best local development, use VS Code with Live Server.
-3. The project uses HTML5, CSS3 and vanilla JavaScript.
+## Phase 2 additions
 
-## Structure
+- Four detailed tool sections
+- Concepts, use cases, commands and mini labs
+- Tool-specific branding
+- Copy-to-clipboard commands
+- Tool and content tabs
+- Concept search
+- Interactive GitHub → Jenkins → Docker → Kubernetes pipeline
+- 10-question quiz with instant feedback
+- Responsive layout
+- Dark/light mode
 
-- `index.html` — page structure and content
-- `css/style.css` — responsive styling and theme
-- `js/main.js` — theme, mobile navigation and progress bar
-- `assets/` — reserved for the command cheat-sheet PDF in a later phase
+## Next
 
-## Later DevOps workflow
+Phase 3 will generate the downloadable DevOps command cheat-sheet PDF and connect the **Get Commands** button.
 
-This same project will be used for the DevOps lab workflow:
-
-Git/GitHub → Jenkins → Docker → Kubernetes
+The same project will later receive Docker, Kubernetes and Jenkins deployment files.
