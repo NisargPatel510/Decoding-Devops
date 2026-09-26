@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: decoding-devops
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: decoding-devops
+
+  template:
+    metadata:
+      labels:
+        app: decoding-devops
+
+    spec:
+      containers:
+        - name: decoding-devops
+          image: decoding-devops:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
